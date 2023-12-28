@@ -83,6 +83,7 @@ test:
 #
 production:
   <<: *default
-  database: app_production
-  username: app
+  database: rails_api_nextjs_app1
+  username: rails_api_nextjs_app1_user
   password: <%= ENV["APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
